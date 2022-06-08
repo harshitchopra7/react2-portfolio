@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-
+import Homepage from "./components/Homepage/Homepage"
 
 // Portfolio Website
 
@@ -14,6 +14,8 @@ function App() {
   return (
     <div className="App">
      <Navbar />
+     <Homepage />
+
     </div>
   );
 }

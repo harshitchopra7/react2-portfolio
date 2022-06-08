@@ -1,5 +1,9 @@
 body {
   margin: 0;
-  background-color: #181818;
+  background-color: black;
   color: whitesmoke;
+}
+.App {
+  padding: 0 9%;
+  background-color: black;
 }
