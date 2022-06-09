@@ -1,6 +1,7 @@
-import './App.css';
+import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Homepage from "./components/Homepage/Homepage"
+import Homepage from "./components/Homepage/Homepage";
+import TechStack from "./components/TechStack/TechStack";
 
 // Portfolio Website
 
@@ -13,9 +14,9 @@ import Homepage from "./components/Homepage/Homepage"
 function App() {
   return (
     <div className="App">
-     <Navbar />
-     <Homepage />
-
+      <Navbar />
+      <Homepage />
+      <TechStack />
     </div>
   );
 }
