@@ -1,0 +1,11 @@
+.techstack_icons {
+    flex: 33%;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.techstack_icons > img {
+    width: 80px;
+}

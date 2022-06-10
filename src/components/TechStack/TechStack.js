@@ -6,6 +6,7 @@ import github from "../../images/techStack/github.png";
 import html from "../../images/techStack/html.png";
 import js from "../../images/techStack/js.png";
 import react from "../../images/techStack/react.png";
+import TechStackIconContainer from "./TechStackIconContainer/TechStackIconContainer";
 
 function TechStack() {
   const techstackData = [
@@ -26,33 +27,46 @@ function TechStack() {
     },
   ];
 
+  const techstackData2 = [
+    {
+      iconName: "C++",
+      iconImage: cpp,
+      iconAltPropery: "cppImage",
+    },
+    {
+      iconName: "Github",
+      iconImage: github,
+      iconAltPropery: "githubImage",
+    },
+    {
+      iconName: "Firebase",
+      iconImage: firebase,
+      iconAltPropery: "firebaseImage",
+    },
+  ];
+
   return (
     <div className="techstack_container">
       <p className="techstack_title">Tech Stack</p>
-
       <div className="techstack_icon_container">
-
-        {techstackData.map((value, key) => (
-          <div className="techstack_icons">
-            <img src={value.iconImage} alt={value.iconAltPropery} />
-            <p>{value.iconName}</p>
-          </div>
-        ))}
-
+        {techstackData.map((value, key) => {
+          return (
+            <TechStackIconContainer
+              image={value.iconImage}
+              altProperty={value.iconAltPropery}
+              name={value.iconName}
+            />
+          );
+        })}
       </div>
       <div className="techstack_icon_container">
-        <div className="techstack_icons">
-          <img src={cpp} alt="cppImage" />
-          <p>C++</p>
-        </div>
-        <div className="techstack_icons">
-          <img src={github} alt="githubImage" />
-          <p>Github</p>
-        </div>
-        <div className="techstack_icons">
-          <img src={firebase} alt="firebaseImage" />
-          <p>Firebase</p>
-        </div>
+        {techstackData2.map((value, key) => (
+          <TechStackIconContainer 
+            image={value.iconImage}
+            altProperty={value.iconAltPropery}
+            names={value.iconName}
+          />
+        ))}
       </div>
     </div>
   );
