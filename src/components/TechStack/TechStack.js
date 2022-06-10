@@ -64,7 +64,7 @@ function TechStack() {
           <TechStackIconContainer 
             image={value.iconImage}
             altProperty={value.iconAltPropery}
-            names={value.iconName}
+            name={value.iconName}
           />
         ))}
       </div>
