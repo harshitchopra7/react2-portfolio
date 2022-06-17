@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Homepage from "./components/Homepage/Homepage";
 import TechStack from "./components/TechStack/TechStack";
 import Experience from "./components/Experience/Experience";
+import Projects from "./components/Projects/Projects";
 
 // Portfolio Website
 
@@ -19,6 +20,7 @@ function App() {
       <Homepage />
       <TechStack />
       <Experience />
+      <Projects />
     </div>
   );
 }
