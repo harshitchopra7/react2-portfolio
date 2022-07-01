@@ -19,7 +19,7 @@ function Experience() {
   const iconImages = [react, js, html, firebase];
 
   return (
-    <div className="experience_container">
+    <div id="experience" className="experience_container">
       <p className="experience_title">Experience</p>
       <div className="experience_cards_container">
         <ExperienceCard

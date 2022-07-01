@@ -13,13 +13,15 @@
 .navbar_right {
     display: flex;
 }
-.navbar_right > p {
+.navbar_right > a {
     margin-left: 20px;
     margin-right: 20px;
     padding: 8px 10px;
     font-size: 18px;
+    text-decoration: none;
+    color: white;
 }
-.navbar_right > p:hover {
+.navbar_right > a:hover {
     background-color: gray;
     cursor: pointer;
     border-radius: 8px;

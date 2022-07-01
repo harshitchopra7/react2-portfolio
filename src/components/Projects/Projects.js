@@ -40,7 +40,7 @@ function Projects() {
   ];
 
   return (
-    <div>
+    <div id="projects">
       <p className="projects_title">Projects</p>
       <div className="projects_box_container">
         {projectsData.map((value, key) => (

@@ -46,7 +46,7 @@ function TechStack() {
   ];
 
   return (
-    <div className="techstack_container">
+    <div id="tools" className="techstack_container">
       <p className="techstack_title">Tech Stack</p>
       <div className="techstack_icon_container">
         {techstackData.map((value, key) => {
